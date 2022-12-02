@@ -1,3 +1,8 @@
-function Add-Numbers {
-    throw [NotImplementedException]'Add-Numbers is not implemented.'
+function Add-Numbers
+{
+    [CmdletBinding()]
+    param()
+
+    # Return 0 when no input is provided
+    Write-Output -InputObject 0
 }
