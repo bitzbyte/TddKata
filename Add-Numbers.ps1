@@ -13,5 +13,5 @@ function Add-Numbers
     $Sum += $SplitStr | ForEach-Object { [int] $_ }
 
     # Return 0 when no input is provided
-    Write-Output -InputObject 0
+    Write-Output -InputObject $Sum
 }
