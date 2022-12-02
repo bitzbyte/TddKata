@@ -3,7 +3,7 @@ BeforeAll {
 }
 
 Describe "Add-Numbers" {
-    It "Returns expected output" {
-        Add-Numbers | Should -Be "YOUR_EXPECTED_VALUE"
+    It "Returns 0 when no input is provided" {
+        Add-Numbers | Should -Be 0
     }
 }
