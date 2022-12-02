@@ -10,7 +10,11 @@ function Add-Numbers
     $SplitStr = [regex]::Split($InputString, '\D+')
 
     $Sum = 0
-    $Sum += $SplitStr | ForEach-Object { [int] $_ }
+    
+    foreach ($n in $SplitStr)
+    {
+        $Sum += [int] $n
+    }
 
     # Return 0 when no input is provided
     Write-Output -InputObject $Sum
