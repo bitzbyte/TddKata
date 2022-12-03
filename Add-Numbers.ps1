@@ -7,7 +7,7 @@ function Add-Numbers
         $InputString = [string]::Empty
     )
 
-    $SplitStr = [regex]::Split($InputString, '\D+')
+    $SplitStr = [regex]::Split($InputString, '[^0-9\.]+')
 
     $Sum = 0
     
