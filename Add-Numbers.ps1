@@ -13,7 +13,7 @@ function Add-Numbers
     
     foreach ($n in $SplitStr)
     {
-        $Sum += [int] $n
+        $Sum += [double] $n
     }
 
     # Return 0 when no input is provided
