@@ -19,3 +19,9 @@ Describe 'Add-Numbers "1,2"' {
         Add-Numbers '1,2' | Should -Be 3
     }
 }
+
+Describe 'Add-Numbers "1.2,2"' {
+    It 'Returns 3.2 when "1.2,2" is provided' {
+        Add-Numbers '1.2,2' | Should -Be 3.2
+    }
+}
